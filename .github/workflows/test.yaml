@@ -3,7 +3,7 @@ name: Go Sec
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   sast-check:
