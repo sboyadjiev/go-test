@@ -18,11 +18,11 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: '1.23.1'
-           
+
       - name: Download Go modules
         if: ${{ !env.ACT }}  # Only run if NOT running in act
         run: go mod download
-        
+
       - name: Verify Go modules
         if: ${{ !env.ACT }}  # Only run if NOT running in act
         run: go mod verify
